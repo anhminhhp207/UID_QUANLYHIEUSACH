@@ -37,9 +37,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ValueObject">
-      <HintPath>..\ValueObject\bin\Debug\ValueObject.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTHoaDonDAO.cs" />
@@ -52,6 +49,12 @@
     <Compile Include="TheLoaiDAO.cs" />
     <Compile Include="dbConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ValueObject\ValueObject.csproj">
+      <Project>{920cd656-7546-4123-bbc4-1830e2abeadc}</Project>
+      <Name>ValueObject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
